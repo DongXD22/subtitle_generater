@@ -1,0 +1,32 @@
+.vscode/
+.whisper.cpp/
+.zip
+__pycache__/
+
+storage/archives/*
+! storage/archives/.gitkeep
+
+storage/audios/*
+! storage/audios/.gitkeep
+
+storage/audios_uncut/*
+! storage/audios_uncut/.gitkeep
+
+
+storage/raw_videos/*
+! storage/raw_videos/.gitkeep
+
+storage/subtitles/*
+! storage/subtitles/.gitkeep
+
+storage/subtitles_raw/*
+! storage/subtitles_raw/.gitkeep
+
+storage/subtitles_translated/*
+! storage/subtitles_tarslated/.gitkeep
+
+storage/tasks.json
+
+tests/
+
+ad/
