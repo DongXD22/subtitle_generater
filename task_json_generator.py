@@ -2,40 +2,6 @@ import json
 from utils import *
 import copy
 
-# region 废案
-# task_template={
-#     "start_stage":"begin",
-#     "end_stage":"end",
-#     "llm_prompt":{
-
-#     },
-#     "len":-1,
-#     "start_point":"00:00:00.000",
-#     "trans_to":"None",
-#     "ggml_prompt":{
-
-#     }
-# }
-
-# task={
-#     "start_stage":"begin",
-#     "end_stage":"end",
-#     "llm_prompt":{
-
-#     },
-#     "len":-1,
-#     "start_point":"00:00:00.000",
-#     "lang":"zh",
-#     "trans_to":"None",
-#     "ggml_prompt":{
-
-#     }
-# }
-# endregion
-
-LLM_PROMPT = "我将会发给你关于教育的日语演讲的视频的日语字幕文件，因为自动识别所有有大量错误，请修正，删除末尾句号，保持时间轴不变，逐句修正，保持源语言不变"
-LLM_PROMPT_TRANS = "我将会发给你关于教育的日语演讲的视频的英语字幕文件，你需要将其翻译为中文，不包含原语言，并且因为自动识别所有有大量错误，请修正，删除末尾句号，保持时间轴不变，逐句修正，翻译"
-
 
 def generate_tasks():
     input_path = STORAGE_PATH/"raw_videos"
