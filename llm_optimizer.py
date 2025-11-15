@@ -33,7 +33,6 @@ class Gemini:
 请开始处理并输出修正后的 SRT 字幕。
 """
 
-        tmp_file_path = None
         output_path = STORAGE_PATH/("subtitles")/file_path.name
         if trans_to != "None":
             output_path = STORAGE_PATH / \
@@ -71,9 +70,6 @@ class Gemini:
                 print(f"api[{self.current_key}]不可用")
                 print(e)
                 self.switch_api()
-
-        print("正在删除:\n", str(tmp_file_path))
-        os.remove(tmp_file_path)
 
     def switch_api(self):
         self.current_key += 1
